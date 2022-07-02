@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="get">
+        <div>{% if Symbol.name %}
+                <a>A share of {{ Symbol.name }} ({{Symbol.symbol}}) costs {{Symbol.price | usd}}.</a>
+            {% endif %}
+        </div>
+{% endblock %}

@@ -1,0 +1,118 @@
+#carouselExampleCaptions{
+    height:500px;
+    width:500px;
+    margin:0;
+    float:left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+    color:white;
+    height: 100%;
+}
+
+
+body{
+    background-color:#000000;
+    margin-right:75px;
+    margin-left:75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-image {
+
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+}
+
+.hello{
+    text-align:center;
+}
+#lightmode{
+  float:left;
+}
+button{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+
+}
+button:hover{
+    background-color:white;
+}
+#navbar{
+  text-align:center;
+  background-color: #333;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+
+}
+
+li {
+    display:inline;
+    float: none;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:30px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+  text-decoration:none;
+  color:white;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.active:hover{
+  text-decoration:none;
+  color:white;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#programmingbg{
+  background-image:url('https://cdn.datafloq.com/cache/blog_pictures/878x531/artificial-intelligence-future-of-programming.jpg');
+}
+#historybg{
+  background-image:url('https://ocdn.eu/images/pulscms/NmE7MDA_/1e72f739f175e7e023d94f70da240e51.jpeg');
+}
+
+
+
+

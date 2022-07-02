@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    
+    int height;
+    
+    do
+    {
+        height = get_int("Height: ");
+    
+    }
+    while (height < 1 || height > 8);
+    
+    // i = height
+    // k = number of "#"
+    // j = number of " "
+    for (int i = 1 ; i < height; i++)
+    {
+        for (int j = 0; j < height - i; j++)
+        {
+            printf(" ");
+        }
+            
+        for (int k = 0; k < i; k++)
+        {
+            printf("#");
+        }
+        
+        for (int x = 0; x < 2; x++)
+        {
+            printf(" ");
+        }
+        
+        for (int z = 0; z < i; z++)
+        {
+            printf("#");
+        }
+            
+        printf("\n");
+    }
+}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                {% for user in user %}
+                    <td colspan="4"></td>
+                    <td>{{ (total + user.cash) | usd}}</td>
+                {% endfor %}
+
+            </tr>
+        </tfoot>
+            {% if transactions|length >= 1 %}
+        <tbody>
+                {% for share in shares %}
+                    {% if share.sum_shares > 0 %}
+                    <tr>
+                        <td>{{ share.stock_symbol }}</td>
+                        <td>{{ share.stocks_name }}</td>
+                        <td>{{ share.sum_shares }}</td>
+                        <td>{{ share.price | usd }}</td>
+                        <td>{{ share.total | usd }}</td>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            <tr>
+                {% for user in user %}
+                    <td colspan="4">CASH</td>
+                    <td>{{ user.cash | usd }}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

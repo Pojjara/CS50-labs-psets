@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: Runtime for reversed50000 was 6 time longer than sorted 50000
+
+sort2 uses: Merge sort
+
+How do you know?: It was much faster than sort3 for sorted50000 and slower than sort1
+
+sort3 uses: Selection sort
+
+How do you know?: Runtime for both random50000 and sorted50000 was exactly the same which proves it's O(n2) and Omega(n2)
